@@ -51,12 +51,13 @@ class OrderQueryPage(BasePage):
         self.driver.find_element(*self.order_number).send_keys(str)
     
     #查询   
-    def search_btn(self):
+    def search_btn_click(self):
+#        assert self.driver.find_element(self.search_btn).enabled()
         self.driver.find_element(*self.search_btn).click()
-        sleep(5)
+        sleep(2)
     
     #清除
-    def clear_btn(self):
+    def clear_btn_click(self):
         self.driver.find_element(*self.clear_btn).click()      
         sleep(2)
 

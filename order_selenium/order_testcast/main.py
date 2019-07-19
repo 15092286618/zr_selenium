@@ -43,10 +43,10 @@ if __name__ == "__main__":
     now = time.strftime("%Y-%m-%d %H_%M_%S", time.localtime())
     filename = '../report/webuireport_' + now + '.html' 
 #     ftp = open(filename,'wb+')
-    ftp = open(filename,'wb')
+    ftp = open(filename,'wb+')
     #构造测试集
     suite = unittest.TestSuite()
-    suite.addTest(TestLogin('test_order_login'))
+ #   suite.addTest(TestLogin('test_order_login'))
     suite.addTest(TestQuery('test_order_query'))
     
 #     description = '''

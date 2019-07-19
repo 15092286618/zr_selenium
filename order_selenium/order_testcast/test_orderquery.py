@@ -12,7 +12,7 @@ import time
 from order_selenium.order_testcast.test_base import TestOrderBase
 
 
-class TestQuery(TestOrderBase):
+class TestQuery(TestOrderBase): 
 
     def test_order_query(self):
         #登录
@@ -26,11 +26,11 @@ class TestQuery(TestOrderBase):
         qry.order_number_inp('20190719113656379972A')
         
         time.sleep(2)
-#         qry.search_btn()
+        qry.search_btn_click()
         time.sleep(10)
-        qry.clear_btn()
+        qry.clear_btn_click()
         time.sleep(2)
-#         qry.search_btn()
+        qry.search_btn_click()
         qry.refresh_web()
 
 # if __name__ == "__main__":
